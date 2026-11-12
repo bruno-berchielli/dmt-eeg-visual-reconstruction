@@ -1,5 +1,7 @@
 # Results
 
+This is the detailed record: every measurement and control experiment, in the order the work was done. For an overview, read the [README](../README.md) first. Terms and abbreviations are defined in the [glossary](glossary.md). Early sections describe approaches that were later replaced; section 13 covers the method behind the published videos, and section 14 summarizes what holds.
+
 Status as of 2026-11-11. The numbers come from the reports in [`docs/reports/`](reports/), and the figures are in [`docs/figures/`](figures/). Chance on THINGS: 0.5% top-1 and 2.5% top-5 with 200 alternatives; 1% and 5% with 100.
 
 ## 1. Encoders trained on THINGS-EEG2 (sub-08)

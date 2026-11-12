@@ -19,33 +19,61 @@ This project asks whether scalp EEG can translate part of that subjective visual
 
 Under each video: what that participant reported seeing during the session, on a 0-100 questionnaire scale (5D-ASC). *Patterns* is simple imagery such as colors, shapes and geometric patterns; *scenes* is complex imagery such as scenes, beings and objects. These six are among the strongest experiences in the dataset.
 
-Top strip: time in the recording, time-window width (lens), confidence in the local data and in the state prediction. Bottom strip: the three image categories the decoded vector leans to. Static means the data do not support a picture at that moment. Full videos and per-participant details: [docs/cases](docs/cases/README.md).
+## How to read a video
 
-## What it does
+Each frame has three parts:
 
-1. **Decode.** A ridge decoder trained on five THINGS-EEG2 participants maps 1 s EEG windows to CLIP ViT-H/14 image embeddings. Windows are aligned to the peaks of an image-onset template, about 350 per recording.
-2. **Stabilize.** A phase-randomized surrogate of each recording gives the decoder's response to the spectrum alone, which is subtracted. The participant's eyes-closed recording gives the rest baseline.
-3. **Infer the lens.** For every moment, the smallest time window whose average is expected to be reliable, from the local consistency of the decoded windows (Spearman-Brown), capped at 30 s.
-4. **Measure confidence.** Split-half agreement in a whitened space, expressed against recordings of other participants. A state prediction from the measured alpha suppression fills in where local data are weak; static appears where neither holds.
-5. **Render.** SDXL-Turbo with IP-Adapter, fixed seed, no text prompt and no image prior: the picture changes only when the decoded vector changes. A category readout from text probes is drawn on every frame.
+- **The picture.** An AI image generator draws what the brain signal of that moment most resembles. The picture changes only when the signal changes.
+- **Top strip.** The time within the session, how many seconds of EEG were averaged for this frame (`lens`), and two confidence scores from 0 to 100% (`data` and `prior`, explained below).
+- **Bottom strip.** The three kinds of image the signal leans toward at that moment, out of seven: geometry, architecture, entities, people, animals, nature, objects.
 
-Runs on a laptop GPU (Apple M4 Pro, about 2 s per frame).
+When the picture dissolves into **static**, the signal at that moment is too weak or too inconsistent to support any picture.
 
-## Results so far
+The kind of image (the category) is read from the EEG. The specific picture is the generator's illustration of that category, not a recording of what the person saw.
 
-- **The decoded trajectory is a property of the recording.** Independent halves of the data agree over time, and the direction in which vectors move with the drug level is shared across participants (consistency p = 0.001, n = 25).
-- **A common course.** Along the session the readout moves between "beings" (people, animals, entities) and "structure" (geometry, architecture) in about 20 of 25 participants, tracking the measured alpha suppression.
-- **Link to reports.** Participants who reported stronger elementary imagery show more geometric structure in the decoded signal (Spearman 0.38, p = 0.06, n = 25). S07, who reported patterns with few scenes, yields an almost purely geometric video.
-- **Transfer across people works within a lab**: a detector and decoder trained on 21 participants of a single-image dataset work on the 22nd (AUC 0.71, 22.8% single-trial accuracy at 10% chance).
-- **Reliable time scale: tens of seconds.** The lens model predicts the reliability it delivers (target 0.5, obtained 0.52-0.59).
-- **Recovering rejected sessions.** Most sessions lost to artifact rejection fail on a single electrode; rebuilding it recovers up to 97% of the recording.
+## How it works
 
-Next step: calibration on the same device (sober image viewing, including geometric and visionary imagery, with unpredictable onsets) to move from state readout toward content. Design in the [experiment log](docs/experiment-log.md).
+EEG is the electrical activity of the brain measured by electrodes on the scalp. The pipeline turns it into video in five steps.
 
-- [Experiment log](docs/experiment-log.md): everything tried, in order
-- [Results](docs/results.md): numbers and controls
-- [References](docs/references.md): papers, datasets, model repos
+1. **Translate EEG into "image descriptions".** A decoder is a model that learns the link between brain signals and images. Ours was trained on a public dataset (THINGS-EEG2) in which sober volunteers looked at thousands of photos while their EEG was recorded. Given one second of EEG, it outputs a list of numbers that describes an image, in the same numeric format that AI image models use internally.
+2. **Remove what is not about the moment.** Two things are subtracted: what the decoder outputs for a scrambled copy of the same recording (which keeps the rhythms of the signal but destroys their timing), and the participant's own resting recording with eyes closed and no drug. What remains is what the DMT session adds.
+3. **Choose how much signal to average.** One second of EEG is far too noisy on its own. For every moment, the pipeline works out the shortest stretch of signal whose average can be trusted, up to 30 seconds. This is the `lens`.
+4. **Score the confidence.** The session's data is split into two independent halves; if both halves point to the same image description, the frame is trusted (`data`). Where the local data is weak, the pipeline falls back on what that participant's signal usually looks like at that level of drug effect (`prior`). If neither holds, the frame turns to static.
+5. **Draw.** The image description goes to an image generator (SDXL-Turbo), with no text prompt and no memory of the previous frame.
+
+The drug effect over time is measured from the EEG itself: DMT suppresses the brain's alpha rhythm, and the amount of suppression is used as a gauge of how strong the effect is at each moment.
+
+Everything runs on a laptop (Apple M4 Pro, about 2 seconds per frame).
+
+## What we found so far
+
+The data comes from a public study in which 35 people inhaled DMT while wearing an EEG cap, and afterwards rated their experience on a standard questionnaire.
+
+- **The videos are not random.** When a session's data is split into two independent halves and a video is built from each, the two tell the same story over time. The way the signal shifts as the drug effect rises and falls is also similar from person to person.
+- **Most sessions follow a common path.** In about 20 of 25 participants, the readout leans toward living things (people, animals, entities) when the drug effect is strongest and toward geometry and architecture as it fades.
+- **People who reported more geometric patterns tend to produce more geometric videos.** Across 25 participants the correlation is 0.38 (p = 0.06): suggestive, not yet conclusive. One participant (S07) reported strong patterns and almost no scenes or beings, and their video is almost entirely geometric.
+- **A decoder trained on some people works on a new person**, as long as the recordings come from the same lab and equipment.
+- **A trustworthy picture needs about 30 seconds of EEG.** A 9-minute session supports on the order of ten distinct scenes.
+- **Sessions lost to a single faulty electrode can be recovered**, bringing back several of the participants with the strongest experiences.
+
+## What it does not do yet
+
+- **It does not show what the person saw.** The decoder learned from photos of everyday objects, on different equipment. It can say "this moment looks more like dense patterns than like a living thing", not "this is the entity they met".
+- **Rest also produces pictures.** A sober brain with eyes closed gives pattern-like videos too. The meaningful quantities are the difference from rest and the differences between people.
+- **The category balance is sensitive to processing choices**, such as how a faulty electrode is handled. Some participants' profiles are stable under such changes (S07, S12), others are not.
+
+The next step is calibration on the same equipment: record sober volunteers viewing images, including geometric and visionary imagery, at unpredictable moments, then decode DMT sessions with a model trained on that. The design is in the [experiment log](docs/experiment-log.md).
+
+## Documentation
+
+- [Cases](docs/cases/README.md): the six videos, per participant
+- [Glossary](docs/glossary.md): every term and abbreviation used in the docs
+- [Results](docs/results.md): all numbers and control experiments
+- [Experiment log](docs/experiment-log.md): everything that was tried, in order, including what failed
+- [References](docs/references.md): papers, datasets and model repositories
 - [Original brief](docs/brief.md)
+
+The sections below are for reproducing the work.
 
 ## Models and generator
 

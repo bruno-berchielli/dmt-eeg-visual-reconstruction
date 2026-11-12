@@ -1,5 +1,7 @@
 # Experiment log
 
+This is the lab notebook: what was tried, in order, including dead ends. For an overview, read the [README](../README.md) first. Terms and abbreviations are defined in the [glossary](glossary.md).
+
 Chronological record of what was done, decided and changed, with the reason for each item. Results with numbers are in [results.md](results.md).
 
 ## 2026-11-11

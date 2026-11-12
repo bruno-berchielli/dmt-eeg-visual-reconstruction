@@ -1,25 +1,27 @@
 # Cases
 
-Six participants of the inhaled-DMT dataset (Zenodo 3992359) with the strongest experiences (5D-ASC total) among those whose recordings needed no electrode repair. Each video is the DMT recording minus the same participant's sober eyes-closed recording.
+Six participants of a public study in which people inhaled DMT while wearing an EEG cap ([Zenodo 3992359](https://zenodo.org/records/3992359)). They are the participants with the strongest experiences, by questionnaire, among those whose recordings needed no electrode repair. Each video shows what their brain signal during DMT resembles, in images, after subtracting their own sober eyes-closed rest.
 
-Settings: dense template-aligned windows, five-subject THINGS ridge decoder, phase-randomized surrogate mean subtracted, inferred lens capped at 30 s (target reliability 0.65), confidence calibrated against other participants, one frame per second of recording played at 12 fps.
-
-```
-cd src && python dmt_events_video.py S07 T500multi DMT inferred contrast step=1 target=0.65 max=30
-```
+New to the project? Start with the [README](../../README.md); terms are defined in the [glossary](../glossary.md).
 
 ## How to read a frame
 
-- **Top strip:** time in the recording, lens width in use, confidence in the local data, confidence in the state prediction (a regression of the participant's own vectors on the measured alpha suppression).
-- **Image:** generated from the frame vector with a fixed seed and no image prior. It is blended with static in proportion to the lower confidence; static means neither the data nor the prediction hold.
-- **Bottom strip:** the three categories the vector leans to, with relative weights over seven text-probe categories (geometry, architecture, entities, people, animals, nature, objects). Weights are relative, not probabilities.
-- The category is what the data support. The concrete picture is an illustration by the generator.
+- **Picture:** drawn by an image generator from the brain signal of that moment. It turns to static when the signal does not support a picture.
+- **Top strip:** time in the session; `lens`, the seconds of EEG averaged for the frame; `data` and `prior`, two confidence scores (how well the local signal holds up, and how well a prediction from the strength of the drug effect holds up).
+- **Bottom strip:** the three kinds of image the signal leans toward, out of seven (geometry, architecture, entities, people, animals, nature, objects). The percentages are relative weights, not probabilities.
+
+The kind of image is read from the EEG. The specific picture is the generator's illustration of it, not a recording of what the person saw.
 
 ## Videos
 
-Structure = geometry + architecture; beings = entities + people + animals (mean weight over the recording). Elementary / complex imagery are 5D-ASC subscales (group medians 85 / 53).
+Columns:
 
-| Participant | 5D-ASC total | Elementary / complex imagery | Structure / beings | Leading category by third | Frames visible (confidence > 0.75) | Video |
+- **Reported patterns / scenes:** what the participant reported on the questionnaire (0-100): simple imagery such as colors and geometric patterns, and complex imagery such as scenes, beings and objects. Group medians are 85 and 53.
+- **Structure / beings in the video:** share of the readout going to geometry and architecture, and to entities, people and animals, averaged over the session.
+- **Leading category:** the strongest category in the first, middle and last third of the session.
+- **Trusted frames:** share of frames with confidence above 75%.
+
+| Participant | Overall intensity (questionnaire total) | Reported patterns / scenes | Structure / beings in the video | Leading category by third | Trusted frames | Video |
 |---|---|---|---|---|---|---|
 | S12 | 1317 | 90 / 73 | 0.60 / 0.27 | geometry, architecture, architecture | 70% (23% static) | [download](S12_dmt_minus_rest.mp4?raw=true) |
 | S04 | 1214 | 85 / 72 | 0.15 / 0.54 | geometry, objects, animals | 89% | [download](S04_dmt_minus_rest.mp4?raw=true) |
@@ -37,12 +39,18 @@ Structure = geometry + architecture; beings = entities + people + animals (mean 
 | S19 | ![S19](S19_frames.jpg) |
 | S31 | ![S31](S31_frames.jpg) |
 
-## What the cases show
+## What stands out
 
-- **S07** reported strong patterns and few scenes or beings; the video is almost entirely structure (beings 0.11, among the lowest of 30 participants).
-- **S12, S28** reported both; both poles appear, in opposite order.
+- **S07** reported strong patterns and few scenes or beings, and the video is almost entirely geometric: only 11% of the readout goes to living things, among the lowest of 30 participants.
+- **S12 and S28** reported both patterns and scenes. Both appear in their videos, in opposite order.
 - **S04** opens with patterns and moves to objects and beings.
 
 ## Scope
 
-The decoder was trained in another lab, so the videos read the brain state as it evolves, in image categories, rather than specific content. The category is what the data support; the concrete picture is the generator's illustration. Sessions have no time-resolved report, so the order of scenes cannot be checked against experience.
+The decoder was trained on other people, on different equipment, looking at photos of everyday objects. The videos therefore show how the brain state evolves, expressed in image categories, rather than the specific things a person saw. The sessions have no minute-by-minute report, so the order of scenes cannot be checked against the experience.
+
+To generate one of these videos:
+
+```
+cd src && python dmt_events_video.py S07 T500multi DMT inferred contrast step=1 target=0.65 max=30
+```
