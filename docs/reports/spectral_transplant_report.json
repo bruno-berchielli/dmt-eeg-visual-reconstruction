@@ -1,0 +1,160 @@
+{
+ "atm": {
+  "cos_group_real_vs_transplant": 0.8623486161231995,
+  "cos_subject_real_vs_transplant_median": 0.7417517900466919,
+  "norm_ratio_transplant_over_real": 0.7552862763404846,
+  "transplant_top": [
+   "blowgun",
+   "stilt",
+   "arm",
+   "man",
+   "harness",
+   "costume",
+   "pogo_stick",
+   "boy",
+   "girl",
+   "woman",
+   "javelin",
+   "shears"
+  ],
+  "real_top": [
+   "arm",
+   "scalpel",
+   "blindfold",
+   "nail_file",
+   "stilt",
+   "harness",
+   "hairspray",
+   "hip",
+   "toga",
+   "costume",
+   "pogo_stick",
+   "nightshirt"
+  ],
+  "residual_consistency": 0.17103803157806396,
+  "residual_top": [
+   "wax_paper",
+   "paper",
+   "canvas",
+   "tape",
+   "bedpan",
+   "paper_plate",
+   "icemaker",
+   "napkin",
+   "cookie_sheet",
+   "ironing_board",
+   "glue",
+   "soap"
+  ],
+  "permuted_consistency": -0.001883762888610363,
+  "permuted_top_examples": [
+   [
+    "power_line",
+    "streetlight",
+    "traffic_light",
+    "pipe2",
+    "grille"
+   ],
+   [
+    "reindeer",
+    "fox",
+    "deer",
+    "leopard",
+    "cardinal"
+   ],
+   [
+    "hook2",
+    "kite",
+    "garter",
+    "noisemaker",
+    "toothpaste"
+   ],
+   [
+    "amplifier",
+    "metronome",
+    "heater",
+    "cigarette_holder",
+    "stapler"
+   ]
+  ]
+ },
+ "linear": {
+  "cos_group_real_vs_transplant": 0.5486660003662109,
+  "cos_subject_real_vs_transplant_median": 0.2936210036277771,
+  "norm_ratio_transplant_over_real": 0.30537065863609314,
+  "transplant_top": [
+   "shaker",
+   "pitcher",
+   "watering_can",
+   "paper_towel",
+   "water_cooler",
+   "pepper_mill",
+   "juicer1",
+   "vase",
+   "glass",
+   "canister",
+   "water_filter",
+   "juicer2"
+  ],
+  "real_top": [
+   "punch1",
+   "juicer1",
+   "footbath",
+   "sheet",
+   "cream",
+   "hairspray",
+   "dishwashing_liquid",
+   "closet",
+   "straw2",
+   "photo_booth",
+   "skirt",
+   "nail_polish"
+  ],
+  "residual_consistency": 0.012895232066512108,
+  "residual_top": [
+   "hip",
+   "stomach",
+   "punch1",
+   "closet",
+   "photo_booth",
+   "sheet",
+   "hairspray",
+   "mannequin",
+   "costume",
+   "parfait",
+   "footbath",
+   "skirt"
+  ],
+  "permuted_consistency": -0.00741793867200613,
+  "permuted_top_examples": [
+   [
+    "branch",
+    "tree",
+    "tree_trunk",
+    "owl",
+    "tumbleweed"
+   ],
+   [
+    "calf1",
+    "mole",
+    "boar",
+    "aardvark",
+    "duckling"
+   ],
+   [
+    "mud",
+    "rock",
+    "sandbag",
+    "gravel",
+    "rust"
+   ],
+   [
+    "fox",
+    "mongoose",
+    "tarantula",
+    "coyote",
+    "ram"
+   ]
+  ]
+ }
+}

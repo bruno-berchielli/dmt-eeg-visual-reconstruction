@@ -1,0 +1,113 @@
+{
+ "detector": "T500multi",
+ "rates": {
+  "DMT": {
+   "n": 25,
+   "events_per_min": 9.074355059032127,
+   "surrogate_per_min": 10.213996379619982,
+   "events_per_recording": 41.84
+  },
+  "EC": {
+   "n": 27,
+   "events_per_min": 9.535403623047511,
+   "surrogate_per_min": 10.701666479277067,
+   "events_per_recording": 41.629629629629626
+  },
+  "EO": {
+   "n": 21,
+   "events_per_min": 8.073771467988328,
+   "surrogate_per_min": 10.313930065214176,
+   "events_per_recording": 24.952380952380953
+  }
+ },
+ "content": {
+  "DMT_clip": {
+   "n": 25,
+   "consistency": 0.02004096657037735,
+   "p": 0.15484515484515485,
+   "top": [
+    "alligator",
+    "raccoon",
+    "mongoose",
+    "groundhog",
+    "meerkat",
+    "hyena",
+    "badger",
+    "giraffe",
+    "boar",
+    "lizard"
+   ]
+  },
+  "DMT_low": {
+   "n": 25,
+   "consistency": -0.005009408574551344,
+   "p": 0.4675324675324675
+  },
+  "EC_clip": {
+   "n": 27,
+   "consistency": 0.06832347065210342,
+   "p": 0.011988011988011988,
+   "top": [
+    "mongoose",
+    "warthog",
+    "anteater",
+    "aardvark",
+    "llama",
+    "lion",
+    "meerkat",
+    "giraffe",
+    "kangaroo",
+    "raccoon"
+   ]
+  },
+  "EC_low": {
+   "n": 27,
+   "consistency": 0.00662256171926856,
+   "p": 0.2837162837162837
+  },
+  "EO_clip": {
+   "n": 21,
+   "consistency": 0.012707696296274662,
+   "p": 0.24675324675324675,
+   "top": [
+    "kangaroo",
+    "hippopotamus",
+    "anteater",
+    "aardvark",
+    "seal",
+    "llama",
+    "platypus",
+    "meerkat",
+    "zebra",
+    "walrus"
+   ]
+  },
+  "EO_low": {
+   "n": 21,
+   "consistency": 0.005643703043460846,
+   "p": 0.3166833166833167
+  },
+  "DMT-EC_clip": {
+   "n": 24,
+   "consistency": 0.00304427370429039,
+   "p": 0.3436563436563437,
+   "top": [
+    "straw2",
+    "appetizer",
+    "cap",
+    "candy_cane",
+    "peppermint",
+    "pin",
+    "olive",
+    "spinach",
+    "lid",
+    "candy"
+   ]
+  },
+  "DMT-EC_low": {
+   "n": 24,
+   "consistency": -0.010298316366970539,
+   "p": 0.5494505494505495
+  }
+ }
+}

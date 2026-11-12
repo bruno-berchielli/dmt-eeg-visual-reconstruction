@@ -1,0 +1,105 @@
+{
+ "n_subjects": 28,
+ "n_subjects_eo": 28,
+ "atm": {
+  "dmt_ec_consistency": 0.2882935106754303,
+  "dmt_ec_null_mean": -0.0006515655639816487,
+  "dmt_ec_null_p": 0.004975124378109453,
+  "eo_ec_consistency": 0.20679239928722382,
+  "cos_group_dmt_vs_group_eo": 0.8618270754814148,
+  "more_with_dmt": [
+   "arm",
+   "scalpel",
+   "blindfold",
+   "nail_file",
+   "stilt",
+   "harness",
+   "hairspray",
+   "hip",
+   "toga",
+   "costume",
+   "pogo_stick",
+   "nightshirt",
+   "clipper2",
+   "suspenders",
+   "man"
+  ],
+  "less_with_dmt": [
+   "cannonball",
+   "barrel",
+   "stump",
+   "landmine",
+   "trunk",
+   "stove2",
+   "trough",
+   "trashcan",
+   "muffin",
+   "rock"
+  ],
+  "spearman_projection_vs_scales": {
+   "5D-ElementaryImagery": {
+    "rho": -0.1501461081694736,
+    "p": 0.4456934678525178
+   },
+   "5D-ComplexImagery": {
+    "rho": -0.21139105031962951,
+    "p": 0.280213702525097
+   },
+   "5D-AudioVisualSyn": {
+    "rho": 0.34122971163323235,
+    "p": 0.07555670310614346
+   }
+  }
+ },
+ "linear": {
+  "dmt_ec_consistency": 0.012668190523982048,
+  "dmt_ec_null_mean": 0.00041973148376200697,
+  "dmt_ec_null_p": 0.10945273631840796,
+  "eo_ec_consistency": 0.016900677233934402,
+  "cos_group_dmt_vs_group_eo": 0.7255920171737671,
+  "more_with_dmt": [
+   "punch1",
+   "juicer1",
+   "footbath",
+   "sheet",
+   "cream",
+   "hairspray",
+   "dishwashing_liquid",
+   "closet",
+   "straw2",
+   "photo_booth",
+   "skirt",
+   "nail_polish",
+   "paper_towel",
+   "water_cooler",
+   "tupperware"
+  ],
+  "less_with_dmt": [
+   "mongoose",
+   "platypus",
+   "boar",
+   "warthog",
+   "aardvark",
+   "groundhog",
+   "ram",
+   "anteater",
+   "weasel",
+   "bear"
+  ],
+  "spearman_projection_vs_scales": {
+   "5D-ElementaryImagery": {
+    "rho": -0.4009396075294735,
+    "p": 0.03447473304248749
+   },
+   "5D-ComplexImagery": {
+    "rho": 0.1853779029357373,
+    "p": 0.34495210960018924
+   },
+   "5D-AudioVisualSyn": {
+    "rho": 0.18458172202311285,
+    "p": 0.3470647003152601
+   }
+  }
+ },
+ "cos_group_atm_vs_linear": 0.29751694202423096
+}

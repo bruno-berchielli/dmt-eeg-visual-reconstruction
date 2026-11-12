@@ -1,0 +1,22 @@
+{
+ "imagery_0-4s": {
+  "acc_minus_chance_mean": 0.016887626262626278,
+  "n": 66,
+  "p_above_chance": 0.008547098432363155
+ },
+ "imagery_1-4s": {
+  "acc_minus_chance_mean": 0.007954545454545462,
+  "n": 66,
+  "p_above_chance": 0.08664242353100388
+ },
+ "perception": {
+  "acc_minus_chance_mean": 0.14479166666666668,
+  "n": 66,
+  "p_above_chance": 2.1296656878668167e-12
+ },
+ "imagery_0-4s_frontal_only": {
+  "acc_minus_chance_mean": 0.017077020202020215,
+  "n": 66,
+  "p_above_chance": 0.003396777349302535
+ }
+}

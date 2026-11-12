@@ -1,0 +1,1050 @@
+[
+ {
+  "scope": "group",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "words": [
+   "arm",
+   "scalpel",
+   "blindfold",
+   "nail_file",
+   "stilt",
+   "harness",
+   "hairspray",
+   "hip"
+  ],
+  "prompt": "a photo of arm, scalpel, blindfold, nail file, stilt, harness, hairspray, hip"
+ },
+ {
+  "scope": "group",
+  "model": "atm",
+  "contrast": "DMT sem EO",
+  "words": [
+   "pantsuit",
+   "toga",
+   "costume",
+   "woman",
+   "mannequin",
+   "girl",
+   "mullet",
+   "face"
+  ],
+  "prompt": "a photo of pantsuit, toga, costume, woman, mannequin, girl, mullet, face"
+ },
+ {
+  "scope": "group",
+  "model": "atm",
+  "contrast": "EO-EC",
+  "words": [
+   "nail_file",
+   "scalpel",
+   "clipper2",
+   "letter_opener",
+   "floss",
+   "arm",
+   "squeegee",
+   "clothespin"
+  ],
+  "prompt": "a photo of nail file, scalpel, clipper, letter opener, floss, arm, squeegee, clothespin"
+ },
+ {
+  "scope": "group",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "words": [
+   "punch1",
+   "juicer1",
+   "footbath",
+   "sheet",
+   "cream",
+   "hairspray",
+   "dishwashing_liquid",
+   "closet"
+  ],
+  "prompt": "a photo of punch, juicer, footbath, sheet, cream, hairspray, dishwashing liquid, closet"
+ },
+ {
+  "scope": "group",
+  "model": "linear",
+  "contrast": "DMT sem EO",
+  "words": [
+   "costume",
+   "photo_booth",
+   "closet",
+   "punch1",
+   "bookshelf",
+   "leotard",
+   "mannequin",
+   "dollhouse"
+  ],
+  "prompt": "a photo of costume, photo booth, closet, punch, bookshelf, leotard, mannequin, dollhouse"
+ },
+ {
+  "scope": "group",
+  "model": "linear",
+  "contrast": "EO-EC",
+  "words": [
+   "straw2",
+   "paper_towel",
+   "nail_file",
+   "cream",
+   "juicer1",
+   "marker",
+   "napkin",
+   "plate"
+  ],
+  "prompt": "a photo of straw, paper towel, nail file, cream, juicer, marker, napkin, plate"
+ },
+ {
+  "scope": "S12",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 73.0,
+  "words": [
+   "toga",
+   "blindfold",
+   "stilt",
+   "nightshirt",
+   "pogo_stick",
+   "blowgun",
+   "man",
+   "mullet"
+  ],
+  "prompt": "a photo of toga, blindfold, stilt, nightshirt, pogo stick, blowgun, man, mullet"
+ },
+ {
+  "scope": "S12",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 73.0,
+  "words": [
+   "rhubarb",
+   "beet",
+   "potpourri",
+   "chive",
+   "saffron",
+   "sweet_potato",
+   "corn",
+   "sprouts"
+  ],
+  "prompt": "a photo of rhubarb, beet, potpourri, chive, saffron, sweet potato, corn, sprouts"
+ },
+ {
+  "scope": "S04",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 72.0,
+  "words": [
+   "candy",
+   "paperclip",
+   "candy_bar",
+   "snack",
+   "clipper1",
+   "gem",
+   "vegetable",
+   "candy_cane"
+  ],
+  "prompt": "a photo of candy, paperclip, candy bar, snack, clipper, gem, vegetable, candy cane"
+ },
+ {
+  "scope": "S04",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 72.0,
+  "words": [
+   "tack",
+   "bubble_wrap",
+   "tab",
+   "jalapeno",
+   "pearl",
+   "foam",
+   "staple",
+   "bologna"
+  ],
+  "prompt": "a photo of tack, bubble wrap, tab, jalapeno, pearl, foam, staple, bologna"
+ },
+ {
+  "scope": "S27",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 63.0,
+  "words": [
+   "costume",
+   "scarecrow",
+   "girl",
+   "toga",
+   "stilt",
+   "pantsuit",
+   "mannequin",
+   "clothes"
+  ],
+  "prompt": "a photo of costume, scarecrow, girl, toga, stilt, pantsuit, mannequin, clothes"
+ },
+ {
+  "scope": "S27",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 63.0,
+  "words": [
+   "costume",
+   "scarecrow",
+   "christmas_tree",
+   "statue",
+   "dirt_bike",
+   "swing_set",
+   "graffiti",
+   "girl"
+  ],
+  "prompt": "a photo of costume, scarecrow, christmas tree, statue, dirt bike, swing set, graffiti, girl"
+ },
+ {
+  "scope": "S13",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 62.0,
+  "words": [
+   "hula_hoop",
+   "stilt",
+   "pogo_stick",
+   "rickshaw",
+   "chute",
+   "hammock",
+   "airboat",
+   "trap"
+  ],
+  "prompt": "a photo of hula hoop, stilt, pogo stick, rickshaw, chute, hammock, airboat, trap"
+ },
+ {
+  "scope": "S13",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 62.0,
+  "words": [
+   "brick",
+   "duct",
+   "scaffolding",
+   "chalk",
+   "clothesline",
+   "file2",
+   "bulletin_board",
+   "incense"
+  ],
+  "prompt": "a photo of brick, duct, scaffolding, chalk, clothesline, file, bulletin board, incense"
+ },
+ {
+  "scope": "S22",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 60.0,
+  "words": [
+   "scalpel",
+   "nail_file",
+   "glue",
+   "string_cheese",
+   "toothpaste",
+   "shaving_cream",
+   "clipper2",
+   "peeler"
+  ],
+  "prompt": "a photo of scalpel, nail file, glue, string cheese, toothpaste, shaving cream, clipper, peeler"
+ },
+ {
+  "scope": "S22",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 60.0,
+  "words": [
+   "spinach",
+   "cinnamon",
+   "olive",
+   "cilantro",
+   "granola",
+   "cereal",
+   "chive",
+   "raisin"
+  ],
+  "prompt": "a photo of spinach, cinnamon, olive, cilantro, granola, cereal, chive, raisin"
+ },
+ {
+  "scope": "S34",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 60.0,
+  "words": [
+   "arm",
+   "woman",
+   "man",
+   "face",
+   "leg",
+   "boy",
+   "girl",
+   "hip"
+  ],
+  "prompt": "a photo of arm, woman, man, face, leg, boy, girl, hip"
+ },
+ {
+  "scope": "S34",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 60.0,
+  "words": [
+   "pinwheel",
+   "cream",
+   "contact_lens",
+   "deodorant",
+   "tape",
+   "nail_file",
+   "paper_towel",
+   "toothpaste"
+  ],
+  "prompt": "a photo of pinwheel, cream, contact lens, deodorant, tape, nail file, paper towel, toothpaste"
+ },
+ {
+  "scope": "S28",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 59.0,
+  "words": [
+   "arm",
+   "scalpel",
+   "nail_file",
+   "letter_opener",
+   "shoulder",
+   "blindfold",
+   "baton1",
+   "baton3"
+  ],
+  "prompt": "a photo of arm, scalpel, nail file, letter opener, shoulder, blindfold, baton, baton"
+ },
+ {
+  "scope": "S28",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 59.0,
+  "words": [
+   "clipper2",
+   "lens",
+   "nail_file",
+   "floss",
+   "timer",
+   "contact_lens",
+   "deodorant",
+   "strainer"
+  ],
+  "prompt": "a photo of clipper, lens, nail file, floss, timer, contact lens, deodorant, strainer"
+ },
+ {
+  "scope": "S18",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 58.0,
+  "words": [
+   "pogo_stick",
+   "icemaker",
+   "footrest",
+   "doorstop",
+   "dumbwaiter",
+   "toga",
+   "bed",
+   "counter"
+  ],
+  "prompt": "a photo of pogo stick, icemaker, footrest, doorstop, dumbwaiter, toga, bed, counter"
+ },
+ {
+  "scope": "S18",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 58.0,
+  "words": [
+   "easel",
+   "ironing_board",
+   "shuffleboard",
+   "water_cooler",
+   "iron",
+   "water_heater",
+   "strainer",
+   "screen1"
+  ],
+  "prompt": "a photo of easel, ironing board, shuffleboard, water cooler, iron, water heater, strainer, screen"
+ },
+ {
+  "scope": "S32",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 58.0,
+  "words": [
+   "paper",
+   "canvas",
+   "wax_paper",
+   "paper_plate",
+   "bedpan",
+   "envelope",
+   "glue",
+   "scanner"
+  ],
+  "prompt": "a photo of paper, canvas, wax paper, paper plate, bedpan, envelope, glue, scanner"
+ },
+ {
+  "scope": "S32",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 58.0,
+  "words": [
+   "icemaker",
+   "cookie_sheet",
+   "swab",
+   "light_switch",
+   "paper",
+   "pencil_sharpener",
+   "tape",
+   "canvas"
+  ],
+  "prompt": "a photo of icemaker, cookie sheet, swab, light switch, paper, pencil sharpener, tape, canvas"
+ },
+ {
+  "scope": "S31",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 57.0,
+  "words": [
+   "fruitcake",
+   "tortilla",
+   "muffin",
+   "casserole",
+   "pastry",
+   "mashed_potato",
+   "scone",
+   "tupperware"
+  ],
+  "prompt": "a photo of fruitcake, tortilla, muffin, casserole, pastry, mashed potato, scone, tupperware"
+ },
+ {
+  "scope": "S31",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 57.0,
+  "words": [
+   "granola",
+   "cinnamon",
+   "pin",
+   "skewer",
+   "breadstick",
+   "straw2",
+   "wafer",
+   "noodle"
+  ],
+  "prompt": "a photo of granola, cinnamon, pin, skewer, breadstick, straw, wafer, noodle"
+ },
+ {
+  "scope": "S17",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 56.0,
+  "words": [
+   "costume",
+   "scarecrow",
+   "girl",
+   "boy",
+   "man",
+   "blowgun",
+   "clothesline",
+   "harness"
+  ],
+  "prompt": "a photo of costume, scarecrow, girl, boy, man, blowgun, clothesline, harness"
+ },
+ {
+  "scope": "S17",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 56.0,
+  "words": [
+   "fern",
+   "tumbleweed",
+   "root",
+   "pine_needle",
+   "porcupine",
+   "grass",
+   "cactus",
+   "mongoose"
+  ],
+  "prompt": "a photo of fern, tumbleweed, root, pine needle, porcupine, grass, cactus, mongoose"
+ },
+ {
+  "scope": "S29",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 56.0,
+  "words": [
+   "stilt",
+   "pogo_stick",
+   "arm",
+   "costume",
+   "woman",
+   "man",
+   "boy",
+   "blowgun"
+  ],
+  "prompt": "a photo of stilt, pogo stick, arm, costume, woman, man, boy, blowgun"
+ },
+ {
+  "scope": "S29",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 56.0,
+  "words": [
+   "statue",
+   "pantsuit",
+   "kimono",
+   "salad",
+   "man",
+   "stir_fry",
+   "duck",
+   "woman"
+  ],
+  "prompt": "a photo of statue, pantsuit, kimono, salad, man, stir fry, duck, woman"
+ },
+ {
+  "scope": "S03",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 53.0,
+  "words": [
+   "boy",
+   "man",
+   "pogo_stick",
+   "stilt",
+   "nightshirt",
+   "uniform",
+   "girl",
+   "toga"
+  ],
+  "prompt": "a photo of boy, man, pogo stick, stilt, nightshirt, uniform, girl, toga"
+ },
+ {
+  "scope": "S03",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 53.0,
+  "words": [
+   "periscope",
+   "computer",
+   "scanner",
+   "rudder",
+   "lectern",
+   "guillotine",
+   "scoreboard",
+   "crank"
+  ],
+  "prompt": "a photo of periscope, computer, scanner, rudder, lectern, guillotine, scoreboard, crank"
+ },
+ {
+  "scope": "S19",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 48.0,
+  "words": [
+   "rack2",
+   "refrigerator",
+   "canvas",
+   "scanner",
+   "shelf",
+   "windowsill",
+   "mug",
+   "binder"
+  ],
+  "prompt": "a photo of rack, refrigerator, canvas, scanner, shelf, windowsill, mug, binder"
+ },
+ {
+  "scope": "S19",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 48.0,
+  "words": [
+   "refrigerator",
+   "dumbwaiter",
+   "scaffold",
+   "siren",
+   "water_heater",
+   "screen1",
+   "pole",
+   "stove1"
+  ],
+  "prompt": "a photo of refrigerator, dumbwaiter, scaffold, siren, water heater, screen, pole, stove"
+ },
+ {
+  "scope": "S16",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 45.0,
+  "words": [
+   "scalpel",
+   "nail_file",
+   "clipper2",
+   "tweezers",
+   "letter_opener",
+   "baton3",
+   "nutcracker",
+   "kazoo"
+  ],
+  "prompt": "a photo of scalpel, nail file, clipper, tweezers, letter opener, baton, nutcracker, kazoo"
+ },
+ {
+  "scope": "S16",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 45.0,
+  "words": [
+   "peeler",
+   "deodorant",
+   "kazoo",
+   "funnel",
+   "tape",
+   "mouthpiece",
+   "glue",
+   "lip_balm"
+  ],
+  "prompt": "a photo of peeler, deodorant, kazoo, funnel, tape, mouthpiece, glue, lip balm"
+ },
+ {
+  "scope": "S23",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 41.0,
+  "words": [
+   "scalpel",
+   "letter_opener",
+   "arm",
+   "penlight",
+   "shoehorn",
+   "floss",
+   "nail_file",
+   "tweezers"
+  ],
+  "prompt": "a photo of scalpel, letter opener, arm, penlight, shoehorn, floss, nail file, tweezers"
+ },
+ {
+  "scope": "S23",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 41.0,
+  "words": [
+   "kimono",
+   "honey",
+   "marmalade",
+   "gravy",
+   "baklava",
+   "ketchup",
+   "pantsuit",
+   "bathrobe"
+  ],
+  "prompt": "a photo of kimono, honey, marmalade, gravy, baklava, ketchup, pantsuit, bathrobe"
+ },
+ {
+  "scope": "S10",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 38.0,
+  "words": [
+   "toga",
+   "harness",
+   "stilt",
+   "costume",
+   "pantsuit",
+   "arm",
+   "nightshirt",
+   "hula_hoop"
+  ],
+  "prompt": "a photo of toga, harness, stilt, costume, pantsuit, arm, nightshirt, hula hoop"
+ },
+ {
+  "scope": "S10",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 38.0,
+  "words": [
+   "skirt",
+   "wreath",
+   "teapot",
+   "dress",
+   "quilt",
+   "coffee_pot",
+   "chinaware",
+   "potholder"
+  ],
+  "prompt": "a photo of skirt, wreath, teapot, dress, quilt, coffee pot, chinaware, potholder"
+ },
+ {
+  "scope": "S33",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 34.0,
+  "words": [
+   "toga",
+   "blindfold",
+   "arm",
+   "bowtie",
+   "man",
+   "bandanna",
+   "nightshirt",
+   "pantsuit"
+  ],
+  "prompt": "a photo of toga, blindfold, arm, bowtie, man, bandanna, nightshirt, pantsuit"
+ },
+ {
+  "scope": "S33",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 34.0,
+  "words": [
+   "shaving_cream",
+   "bowtie",
+   "nail_file",
+   "jeans",
+   "contact_lens",
+   "shirt",
+   "cream",
+   "tie"
+  ],
+  "prompt": "a photo of shaving cream, bowtie, nail file, jeans, contact lens, shirt, cream, tie"
+ },
+ {
+  "scope": "S07",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 33.0,
+  "words": [
+   "blindfold",
+   "harness",
+   "stilt",
+   "scalpel",
+   "arm",
+   "toga",
+   "pogo_stick",
+   "robe"
+  ],
+  "prompt": "a photo of blindfold, harness, stilt, scalpel, arm, toga, pogo stick, robe"
+ },
+ {
+  "scope": "S07",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 33.0,
+  "words": [
+   "yak",
+   "toad",
+   "lion",
+   "cannonball",
+   "wolf",
+   "llama",
+   "tank1",
+   "beetle"
+  ],
+  "prompt": "a photo of yak, toad, lion, cannonball, wolf, llama, tank, beetle"
+ },
+ {
+  "scope": "S11",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 31.0,
+  "words": [
+   "tweezers",
+   "paper",
+   "shoehorn",
+   "velcro",
+   "lens",
+   "strap",
+   "scalpel",
+   "eye_patch"
+  ],
+  "prompt": "a photo of tweezers, paper, shoehorn, velcro, lens, strap, scalpel, eye patch"
+ },
+ {
+  "scope": "S11",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 31.0,
+  "words": [
+   "magnifier",
+   "scanner",
+   "trunk",
+   "bumper",
+   "cane",
+   "holster",
+   "stretcher",
+   "trigger"
+  ],
+  "prompt": "a photo of magnifier, scanner, trunk, bumper, cane, holster, stretcher, trigger"
+ },
+ {
+  "scope": "S02",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 28.0,
+  "words": [
+   "arm",
+   "nail_file",
+   "scalpel",
+   "clipper2",
+   "blindfold",
+   "floss",
+   "eyeliner",
+   "letter_opener"
+  ],
+  "prompt": "a photo of arm, nail file, scalpel, clipper, blindfold, floss, eyeliner, letter opener"
+ },
+ {
+  "scope": "S02",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 28.0,
+  "words": [
+   "photo_booth",
+   "water_cooler",
+   "suitcase",
+   "button2",
+   "headrest",
+   "revolving_door",
+   "gearshift",
+   "leotard"
+  ],
+  "prompt": "a photo of photo booth, water cooler, suitcase, button, headrest, revolving door, gearshift, leotard"
+ },
+ {
+  "scope": "S15",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 25.0,
+  "words": [
+   "clipper1",
+   "noisemaker",
+   "snack",
+   "candy",
+   "brooch",
+   "tackle",
+   "retainer",
+   "wire_cutters"
+  ],
+  "prompt": "a photo of clipper, noisemaker, snack, candy, brooch, tackle, retainer, wire cutters"
+ },
+ {
+  "scope": "S15",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 25.0,
+  "words": [
+   "paint",
+   "octopus",
+   "marker",
+   "crayon",
+   "highlighter",
+   "seafood",
+   "wasp",
+   "tackle"
+  ],
+  "prompt": "a photo of paint, octopus, marker, crayon, highlighter, seafood, wasp, tackle"
+ },
+ {
+  "scope": "S20",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 23.0,
+  "words": [
+   "toga",
+   "shower_cap",
+   "lab_coat",
+   "shaving_cream",
+   "nightshirt",
+   "baby",
+   "blindfold",
+   "mullet"
+  ],
+  "prompt": "a photo of toga, shower cap, lab coat, shaving cream, nightshirt, baby, blindfold, mullet"
+ },
+ {
+  "scope": "S20",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 23.0,
+  "words": [
+   "potpourri",
+   "snack",
+   "pasta",
+   "fast_food",
+   "noodle",
+   "appetizer",
+   "salad",
+   "tortellini"
+  ],
+  "prompt": "a photo of potpourri, snack, pasta, fast food, noodle, appetizer, salad, tortellini"
+ },
+ {
+  "scope": "S26",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 18.0,
+  "words": [
+   "blowgun",
+   "nail_file",
+   "scalpel",
+   "clipper1",
+   "arm",
+   "shears",
+   "blindfold",
+   "slime"
+  ],
+  "prompt": "a photo of blowgun, nail file, scalpel, clipper, arm, shears, blindfold, slime"
+ },
+ {
+  "scope": "S26",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 18.0,
+  "words": [
+   "alligator",
+   "toad",
+   "crayfish",
+   "starfish",
+   "tiger",
+   "tarantula",
+   "watermelon",
+   "hyena"
+  ],
+  "prompt": "a photo of alligator, toad, crayfish, starfish, tiger, tarantula, watermelon, hyena"
+ },
+ {
+  "scope": "S06",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 16.0,
+  "words": [
+   "scalpel",
+   "clipper2",
+   "arm",
+   "nail_file",
+   "letter_opener",
+   "penlight",
+   "checkbook",
+   "tweezers"
+  ],
+  "prompt": "a photo of scalpel, clipper, arm, nail file, letter opener, penlight, checkbook, tweezers"
+ },
+ {
+  "scope": "S06",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 16.0,
+  "words": [
+   "stapler",
+   "scanner",
+   "desk",
+   "rack2",
+   "lectern",
+   "penholder",
+   "cot",
+   "trailer"
+  ],
+  "prompt": "a photo of stapler, scanner, desk, rack, lectern, penholder, cot, trailer"
+ },
+ {
+  "scope": "S25",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 16.0,
+  "words": [
+   "blowgun",
+   "mullet",
+   "man",
+   "arm",
+   "face",
+   "mustache",
+   "woman",
+   "hip"
+  ],
+  "prompt": "a photo of blowgun, mullet, man, arm, face, mustache, woman, hip"
+ },
+ {
+  "scope": "S25",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 16.0,
+  "words": [
+   "potato",
+   "pecan",
+   "meatball",
+   "peanut",
+   "bagel",
+   "bacon",
+   "chocolate",
+   "nut"
+  ],
+  "prompt": "a photo of potato, pecan, meatball, peanut, bagel, bacon, chocolate, nut"
+ },
+ {
+  "scope": "S01",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 11.0,
+  "words": [
+   "bandanna",
+   "arm",
+   "blindfold",
+   "costume",
+   "tie",
+   "toga",
+   "suspenders",
+   "woman"
+  ],
+  "prompt": "a photo of bandanna, arm, blindfold, costume, tie, toga, suspenders, woman"
+ },
+ {
+  "scope": "S01",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 11.0,
+  "words": [
+   "arm",
+   "floss",
+   "beachball",
+   "flip_flop",
+   "deodorant",
+   "nail_file",
+   "hip",
+   "elbow"
+  ],
+  "prompt": "a photo of arm, floss, beachball, flip flop, deodorant, nail file, hip, elbow"
+ },
+ {
+  "scope": "S35",
+  "model": "atm",
+  "contrast": "DMT-EC",
+  "complex_imagery": 10.0,
+  "words": [
+   "arm",
+   "man",
+   "blowgun",
+   "mullet",
+   "face",
+   "hip",
+   "hairspray",
+   "boy"
+  ],
+  "prompt": "a photo of arm, man, blowgun, mullet, face, hip, hairspray, boy"
+ },
+ {
+  "scope": "S35",
+  "model": "linear",
+  "contrast": "DMT-EC",
+  "complex_imagery": 10.0,
+  "words": [
+   "oil",
+   "gravy",
+   "butter",
+   "pudding",
+   "mashed_potato",
+   "soup",
+   "cooker",
+   "maple_syrup"
+  ],
+  "prompt": "a photo of oil, gravy, butter, pudding, mashed potato, soup, cooker, maple syrup"
+ }
+]

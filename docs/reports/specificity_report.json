@@ -1,0 +1,354 @@
+{
+ "atm": {
+  "cosine": {
+   "DMT": {
+    "DMT": 1.0,
+    "EO": 0.86,
+    "alpha_down": 0.79,
+    "fast_up": -0.46,
+    "theta_up": 0.08,
+    "flatten": -0.68,
+    "muscle": -0.46,
+    "dmt_like": 0.86
+   },
+   "EO": {
+    "DMT": 0.86,
+    "EO": 1.0,
+    "alpha_down": 0.75,
+    "fast_up": -0.33,
+    "theta_up": 0.26,
+    "flatten": -0.54,
+    "muscle": -0.26,
+    "dmt_like": 0.74
+   },
+   "alpha_down": {
+    "DMT": 0.79,
+    "EO": 0.75,
+    "alpha_down": 1.0,
+    "fast_up": -0.6,
+    "theta_up": 0.49,
+    "flatten": -0.82,
+    "muscle": -0.56,
+    "dmt_like": 0.94
+   },
+   "fast_up": {
+    "DMT": -0.46,
+    "EO": -0.33,
+    "alpha_down": -0.6,
+    "fast_up": 1.0,
+    "theta_up": -0.11,
+    "flatten": 0.92,
+    "muscle": 0.78,
+    "dmt_like": -0.73
+   },
+   "theta_up": {
+    "DMT": 0.08,
+    "EO": 0.26,
+    "alpha_down": 0.49,
+    "fast_up": -0.11,
+    "theta_up": 1.0,
+    "flatten": -0.16,
+    "muscle": -0.1,
+    "dmt_like": 0.23
+   },
+   "flatten": {
+    "DMT": -0.68,
+    "EO": -0.54,
+    "alpha_down": -0.82,
+    "fast_up": 0.92,
+    "theta_up": -0.16,
+    "flatten": 1.0,
+    "muscle": 0.79,
+    "dmt_like": -0.92
+   },
+   "muscle": {
+    "DMT": -0.46,
+    "EO": -0.26,
+    "alpha_down": -0.56,
+    "fast_up": 0.78,
+    "theta_up": -0.1,
+    "flatten": 0.79,
+    "muscle": 1.0,
+    "dmt_like": -0.64
+   },
+   "dmt_like": {
+    "DMT": 0.86,
+    "EO": 0.74,
+    "alpha_down": 0.94,
+    "fast_up": -0.73,
+    "theta_up": 0.23,
+    "flatten": -0.92,
+    "muscle": -0.64,
+    "dmt_like": 1.0
+   }
+  },
+  "top": {
+   "DMT": [
+    "arm",
+    "scalpel",
+    "blindfold",
+    "nail_file",
+    "stilt",
+    "harness",
+    "hairspray",
+    "hip"
+   ],
+   "EO": [
+    "nail_file",
+    "scalpel",
+    "clipper2",
+    "letter_opener",
+    "floss",
+    "arm",
+    "squeegee",
+    "clothespin"
+   ],
+   "alpha_down": [
+    "harness",
+    "blowgun",
+    "clipper1",
+    "shears",
+    "stilt",
+    "arm",
+    "pogo_stick",
+    "costume"
+   ],
+   "fast_up": [
+    "bedpan",
+    "pot",
+    "bowl",
+    "inkwell",
+    "ashtray",
+    "dustpan",
+    "jug",
+    "mallet"
+   ],
+   "theta_up": [
+    "wire_cutters",
+    "combination_lock",
+    "clipper1",
+    "peeler",
+    "pliers",
+    "stake",
+    "pedal",
+    "drill"
+   ],
+   "flatten": [
+    "bedpan",
+    "pot",
+    "bowl",
+    "ashtray",
+    "inkwell",
+    "trashcan",
+    "jug",
+    "clay"
+   ],
+   "muscle": [
+    "bedpan",
+    "inkwell",
+    "shoehorn",
+    "mallet",
+    "bowl",
+    "ashtray",
+    "router",
+    "pan"
+   ],
+   "dmt_like": [
+    "blowgun",
+    "stilt",
+    "arm",
+    "man",
+    "harness",
+    "costume",
+    "pogo_stick",
+    "boy"
+   ]
+  },
+  "norm": {
+   "DMT": 0.347,
+   "EO": 0.301,
+   "alpha_down": 0.289,
+   "fast_up": 0.155,
+   "theta_up": 0.213,
+   "flatten": 0.538,
+   "muscle": 0.231,
+   "dmt_like": 0.384
+  }
+ },
+ "linear": {
+  "cosine": {
+   "DMT": {
+    "DMT": 1.0,
+    "EO": 0.73,
+    "alpha_down": 0.45,
+    "fast_up": 0.46,
+    "theta_up": 0.49,
+    "flatten": 0.48,
+    "muscle": 0.55,
+    "dmt_like": 0.55
+   },
+   "EO": {
+    "DMT": 0.73,
+    "EO": 1.0,
+    "alpha_down": 0.48,
+    "fast_up": 0.51,
+    "theta_up": 0.48,
+    "flatten": 0.53,
+    "muscle": 0.55,
+    "dmt_like": 0.56
+   },
+   "alpha_down": {
+    "DMT": 0.45,
+    "EO": 0.48,
+    "alpha_down": 1.0,
+    "fast_up": 0.75,
+    "theta_up": 0.68,
+    "flatten": 0.41,
+    "muscle": 0.78,
+    "dmt_like": 0.89
+   },
+   "fast_up": {
+    "DMT": 0.46,
+    "EO": 0.51,
+    "alpha_down": 0.75,
+    "fast_up": 1.0,
+    "theta_up": 0.58,
+    "flatten": 0.8,
+    "muscle": 0.77,
+    "dmt_like": 0.66
+   },
+   "theta_up": {
+    "DMT": 0.49,
+    "EO": 0.48,
+    "alpha_down": 0.68,
+    "fast_up": 0.58,
+    "theta_up": 1.0,
+    "flatten": 0.45,
+    "muscle": 0.61,
+    "dmt_like": 0.58
+   },
+   "flatten": {
+    "DMT": 0.48,
+    "EO": 0.53,
+    "alpha_down": 0.41,
+    "fast_up": 0.8,
+    "theta_up": 0.45,
+    "flatten": 1.0,
+    "muscle": 0.57,
+    "dmt_like": 0.4
+   },
+   "muscle": {
+    "DMT": 0.55,
+    "EO": 0.55,
+    "alpha_down": 0.78,
+    "fast_up": 0.77,
+    "theta_up": 0.61,
+    "flatten": 0.57,
+    "muscle": 1.0,
+    "dmt_like": 0.75
+   },
+   "dmt_like": {
+    "DMT": 0.55,
+    "EO": 0.56,
+    "alpha_down": 0.89,
+    "fast_up": 0.66,
+    "theta_up": 0.58,
+    "flatten": 0.4,
+    "muscle": 0.75,
+    "dmt_like": 1.0
+   }
+  },
+  "top": {
+   "DMT": [
+    "punch1",
+    "juicer1",
+    "footbath",
+    "sheet",
+    "cream",
+    "hairspray",
+    "dishwashing_liquid",
+    "closet"
+   ],
+   "EO": [
+    "straw2",
+    "paper_towel",
+    "nail_file",
+    "cream",
+    "juicer1",
+    "marker",
+    "napkin",
+    "plate"
+   ],
+   "alpha_down": [
+    "watering_can",
+    "faucet",
+    "water_cooler",
+    "pump",
+    "water_filter",
+    "shaker",
+    "bottle",
+    "thermos"
+   ],
+   "fast_up": [
+    "tape",
+    "spring_roll",
+    "toilet_paper",
+    "wrap",
+    "sushi",
+    "paper_towel",
+    "napkin",
+    "paint"
+   ],
+   "theta_up": [
+    "marker",
+    "notepad",
+    "place_mat",
+    "straw2",
+    "pen",
+    "lanyard",
+    "bookmark",
+    "notebook"
+   ],
+   "flatten": [
+    "spring_roll",
+    "coleslaw",
+    "appetizer",
+    "fondue",
+    "dumpling",
+    "sushi",
+    "ravioli",
+    "tortellini"
+   ],
+   "muscle": [
+    "tablecloth",
+    "paper_towel",
+    "toilet_paper",
+    "dishwashing_liquid",
+    "watering_can",
+    "water_cooler",
+    "faucet",
+    "towel"
+   ],
+   "dmt_like": [
+    "shaker",
+    "pitcher",
+    "watering_can",
+    "paper_towel",
+    "water_cooler",
+    "pepper_mill",
+    "juicer1",
+    "vase"
+   ]
+  },
+  "norm": {
+   "DMT": 0.003,
+   "EO": 0.005,
+   "alpha_down": 0.001,
+   "fast_up": 0.001,
+   "theta_up": 0.001,
+   "flatten": 0.001,
+   "muscle": 0.001,
+   "dmt_like": 0.001
+  }
+ }
+}

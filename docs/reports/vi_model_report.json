@@ -1,0 +1,11 @@
+{
+ "n_training_trials": 11352,
+ "onset_s": -5.813999999999999,
+ "things_check": {
+  "detection_auc_onset_vs_100ms_off": 0.5022880000000001,
+  "matched_concepts": 7,
+  "content_single_trial_acc": 0.15714285714285714,
+  "content_per_image_acc": 0.17142857142857143,
+  "content_chance": 0.14285714285714285
+ }
+}

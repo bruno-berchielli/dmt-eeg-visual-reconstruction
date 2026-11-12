@@ -1,0 +1,95 @@
+{
+ "DMT": {
+  "scores": {
+   "bird": -0.0077,
+   "dog": -0.003,
+   "fish": -0.0078,
+   "circle": 0.0099,
+   "pentagram": 0.0049,
+   "square": 0.0092,
+   "chair": -0.0018,
+   "cup": 0.0046,
+   "scissor": 0.0051,
+   "watch": -0.0135
+  },
+  "categories": {
+   "figures": 0.008,
+   "animals": -0.0062,
+   "objects": -0.0014
+  }
+ },
+ "EC": {
+  "scores": {
+   "bird": 0.006,
+   "dog": -0.0144,
+   "fish": -0.0044,
+   "circle": 0.0005,
+   "pentagram": 0.0041,
+   "square": -0.0014,
+   "chair": -0.0012,
+   "cup": 0.0064,
+   "scissor": 0.0067,
+   "watch": -0.0021
+  },
+  "categories": {
+   "figures": 0.0011,
+   "animals": -0.0043,
+   "objects": 0.0024
+  }
+ },
+ "EO": {
+  "scores": {
+   "bird": 0.0184,
+   "dog": -0.0379,
+   "fish": -0.0245,
+   "circle": 0.0084,
+   "pentagram": 0.0033,
+   "square": 0.0072,
+   "chair": -0.0088,
+   "cup": 0.0292,
+   "scissor": 0.0156,
+   "watch": -0.011
+  },
+  "categories": {
+   "figures": 0.0063,
+   "animals": -0.0147,
+   "objects": 0.0063
+  }
+ },
+ "DMT-EC": {
+  "scores": {
+   "bird": -0.0159,
+   "dog": 0.0103,
+   "fish": -0.0111,
+   "circle": 0.0079,
+   "pentagram": -0.0004,
+   "square": 0.0142,
+   "chair": 0.0035,
+   "cup": 0.0001,
+   "scissor": 0.0049,
+   "watch": -0.0136
+  },
+  "categories": {
+   "figures": 0.0072,
+   "animals": -0.0055,
+   "objects": -0.0013
+  }
+ },
+ "paired_DMT_vs_EC": {
+  "figures": {
+   "n": 15,
+   "mean": 0.007246784097515046,
+   "p": 0.25238037109375
+  },
+  "animals": {
+   "n": 15,
+   "mean": -0.005547663134833177,
+   "p": 0.42120361328125
+  },
+  "objects": {
+   "n": 15,
+   "mean": -0.0012743455357849599,
+   "p": 0.803955078125
+  }
+ }
+}

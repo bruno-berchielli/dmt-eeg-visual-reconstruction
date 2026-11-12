@@ -1,0 +1,17 @@
+data/raw/*
+data/processed/*
+models/*
+outputs/*
+!**/.gitkeep
+*.bdf
+*.edf
+*.fif
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+external/

@@ -1,0 +1,113 @@
+{
+ "detector": "T200",
+ "rates": {
+  "DMT": {
+   "n": 27,
+   "events_per_min": 10.311396972145085,
+   "surrogate_per_min": 11.98589990508892,
+   "events_per_recording": 46.370370370370374
+  },
+  "EC": {
+   "n": 27,
+   "events_per_min": 10.456007102594675,
+   "surrogate_per_min": 12.320518818296058,
+   "events_per_recording": 44.81481481481482
+  },
+  "EO": {
+   "n": 22,
+   "events_per_min": 9.401049270115733,
+   "surrogate_per_min": 13.33450164788587,
+   "events_per_recording": 29.636363636363637
+  }
+ },
+ "content": {
+  "DMT_clip": {
+   "n": 27,
+   "consistency": -0.0029532667249441147,
+   "p": 0.46353646353646355,
+   "top": [
+    "train",
+    "carriage",
+    "car",
+    "motorcycle",
+    "tractor",
+    "trolley",
+    "carousel",
+    "parrot",
+    "bus",
+    "dirt_bike"
+   ]
+  },
+  "DMT_low": {
+   "n": 27,
+   "consistency": 0.004919433034956455,
+   "p": 0.3336663336663337
+  },
+  "EC_clip": {
+   "n": 27,
+   "consistency": -0.0017055901698768139,
+   "p": 0.46053946053946054,
+   "top": [
+    "cookie_sheet",
+    "slicer",
+    "waffle_iron",
+    "toaster_oven",
+    "cutting_board",
+    "toaster",
+    "nail_clippers",
+    "soap",
+    "piecrust",
+    "strainer"
+   ]
+  },
+  "EC_low": {
+   "n": 27,
+   "consistency": 0.010417216457426548,
+   "p": 0.26373626373626374
+  },
+  "EO_clip": {
+   "n": 22,
+   "consistency": 0.13390597701072693,
+   "p": 0.004995004995004995,
+   "top": [
+    "string_cheese",
+    "peeler",
+    "cream_cheese",
+    "gum",
+    "nail_file",
+    "rolling_pin",
+    "swab",
+    "bologna",
+    "wax_paper",
+    "soap"
+   ]
+  },
+  "EO_low": {
+   "n": 22,
+   "consistency": 0.048525214195251465,
+   "p": 0.07992007992007992
+  },
+  "DMT-EC_clip": {
+   "n": 25,
+   "consistency": -0.018618106842041016,
+   "p": 0.8281718281718282,
+   "top": [
+    "lion",
+    "giraffe",
+    "owl",
+    "tiger",
+    "llama",
+    "deer",
+    "leopard",
+    "meerkat",
+    "bear",
+    "fox"
+   ]
+  },
+  "DMT-EC_low": {
+   "n": 25,
+   "consistency": -0.019964860752224922,
+   "p": 0.7372627372627373
+  }
+ }
+}

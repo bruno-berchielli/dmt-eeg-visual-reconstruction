@@ -1,0 +1,190 @@
+{
+ "all": {
+  "n": 28,
+  "windows_per_recording": 451.0,
+  "halves": {
+   "median": 0.05926191667094827,
+   "positive": 14,
+   "p": 0.20586686953902245
+  },
+  "across_drug": {
+   "consistency": 0.05348438024520874,
+   "null": 0.00045576218762835195,
+   "p": 0.03296703296703297
+  },
+  "across_drug_without_muscle_regressor": {
+   "consistency": 0.05160854011774063,
+   "p": 0.03196803196803197
+  },
+  "across_muscle": {
+   "consistency": -0.002154078334569931,
+   "p": 0.4175824175824176
+  },
+  "across_DMT_minus_EC": {
+   "n": 27,
+   "consistency": -0.014306888915598392,
+   "p": 0.7072927072927073
+  },
+  "vs_muscle": {
+   "median": 0.35362519323825836,
+   "p": 0.10925160348415375
+  },
+  "vs_contrast": {
+   "n": 27,
+   "median": 0.09263087809085846,
+   "p": 0.33084022998809814
+  },
+  "corr_drug_muscle_median": -0.3243953486000144,
+  "group_drug_vs_group_muscle": 0.8485189080238342,
+  "top_concepts_drug": [
+   "tweezers",
+   "knob",
+   "funnel",
+   "cookie_sheet",
+   "ashtray",
+   "handle",
+   "ruler",
+   "stapler",
+   "tape",
+   "magnifier",
+   "can_opener",
+   "razor_blade"
+  ],
+  "top_concepts_muscle": [
+   "clipper2",
+   "nail_clippers",
+   "nail_file",
+   "can_opener",
+   "tweezers",
+   "floss",
+   "peeler",
+   "scraper",
+   "scalpel",
+   "gum",
+   "pencil_sharpener",
+   "triangle"
+  ],
+  "top_concepts_DMT_minus_EC": [
+   "shoulder",
+   "neck",
+   "torso",
+   "knee",
+   "chest1",
+   "mullet",
+   "loincloth",
+   "chin",
+   "hip",
+   "ankle",
+   "wrist",
+   "elbow"
+  ],
+  "scales": {
+   "5D-Total": {
+    "rho": 0.3139455346219405,
+    "p": 0.10374989010079994
+   },
+   "5D-ElementaryImagery": {
+    "rho": 0.3354913039684209,
+    "p": 0.08093206155007468
+   },
+   "5D-ComplexImagery": {
+    "rho": 0.19170208518720921,
+    "p": 0.3284467927628587
+   }
+  }
+ },
+ "peaks": {
+  "n": 25,
+  "windows_per_recording": 352.0,
+  "halves": {
+   "median": 0.3248737156391144,
+   "positive": 17,
+   "p": 0.00481751561164856
+  },
+  "across_drug": {
+   "consistency": 0.14440687000751495,
+   "null": 0.0011381146587391413,
+   "p": 0.000999000999000999
+  },
+  "across_drug_without_muscle_regressor": {
+   "consistency": 0.12457316368818283,
+   "p": 0.005994005994005994
+  },
+  "across_muscle": {
+   "consistency": 0.04211568832397461,
+   "p": 0.06393606393606394
+  },
+  "across_DMT_minus_EC": {
+   "n": 25,
+   "consistency": 0.2068464457988739,
+   "p": 0.000999000999000999
+  },
+  "vs_muscle": {
+   "median": 0.5673546195030212,
+   "p": 0.000429689884185791
+  },
+  "vs_contrast": {
+   "n": 25,
+   "median": 0.06763400882482529,
+   "p": 0.05996689200401306
+  },
+  "corr_drug_muscle_median": -0.3849972790397762,
+  "group_drug_vs_group_muscle": 0.8032090067863464,
+  "top_concepts_drug": [
+   "shoulder",
+   "elbow",
+   "wrist",
+   "platypus",
+   "loincloth",
+   "knee",
+   "mullet",
+   "leg",
+   "polar_bear",
+   "seal",
+   "arm",
+   "wooden_leg"
+  ],
+  "top_concepts_muscle": [
+   "platypus",
+   "aardvark",
+   "anteater",
+   "hippopotamus",
+   "seal",
+   "kangaroo",
+   "llama",
+   "polar_bear",
+   "warthog",
+   "pony",
+   "walrus",
+   "yak"
+  ],
+  "top_concepts_DMT_minus_EC": [
+   "platypus",
+   "anteater",
+   "aardvark",
+   "mongoose",
+   "hippopotamus",
+   "warthog",
+   "kangaroo",
+   "moose",
+   "seal",
+   "llama",
+   "boar",
+   "otter"
+  ],
+  "scales": {
+   "5D-Total": {
+    "rho": 0.03461538461538462,
+    "p": 0.869522659769591
+   },
+   "5D-ElementaryImagery": {
+    "rho": 0.16035721069381395,
+    "p": 0.4438470497523062
+   },
+   "5D-ComplexImagery": {
+    "rho": -0.24942270670182834,
+    "p": 0.22921492254941864
+   }
+  }
+ }
+}

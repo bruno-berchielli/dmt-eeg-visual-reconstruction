@@ -1,0 +1,89 @@
+{
+ "n_subjects": 61,
+ "n_concepts": 1654,
+ "original": {
+  "cloud_rank_group": 775,
+  "cloud_rank_median_subject": 824.0,
+  "cloud_top100_fraction": 0.0,
+  "wilcoxon_p_rank_below_middle": 0.14715605400402254,
+  "consistency": 0.5672609806060791,
+  "top": [
+   "arm",
+   "stilt",
+   "leg",
+   "baton1",
+   "hula_hoop",
+   "hip",
+   "blowgun",
+   "harness",
+   "mannequin",
+   "pogo_stick",
+   "fishnet_stockings",
+   "baton3"
+  ]
+ },
+ "detail": {
+  "cloud_rank_group": 975,
+  "cloud_rank_median_subject": 931.0,
+  "cloud_top100_fraction": 0.0,
+  "wilcoxon_p_rank_below_middle": 0.9712740175751668,
+  "consistency": 0.49322447180747986,
+  "top": [
+   "arm",
+   "stilt",
+   "leg",
+   "baton1",
+   "mannequin",
+   "blowgun",
+   "pogo_stick",
+   "hip",
+   "javelin",
+   "shoulder",
+   "whiteboard",
+   "polygraph"
+  ]
+ },
+ "adabn": {
+  "cloud_rank_group": 858,
+  "cloud_rank_median_subject": 913.0,
+  "cloud_top100_fraction": 0.0,
+  "wilcoxon_p_rank_below_middle": 0.5429002303275924,
+  "consistency": 0.5623047947883606,
+  "top": [
+   "arm",
+   "stilt",
+   "leg",
+   "harness",
+   "hula_hoop",
+   "pogo_stick",
+   "blowgun",
+   "hip",
+   "mannequin",
+   "baton1",
+   "fishnet_stockings",
+   "hopscotch"
+  ]
+ },
+ "detail+adabn": {
+  "cloud_rank_group": 1120,
+  "cloud_rank_median_subject": 1022.0,
+  "cloud_top100_fraction": 0.0,
+  "wilcoxon_p_rank_below_middle": 0.999996177869986,
+  "consistency": 0.497190922498703,
+  "top": [
+   "arm",
+   "stilt",
+   "leg",
+   "pogo_stick",
+   "blowgun",
+   "hip",
+   "mannequin",
+   "harness",
+   "hula_hoop",
+   "javelin",
+   "baton1",
+   "hairspray"
+  ]
+ },
+ "selected": "original"
+}

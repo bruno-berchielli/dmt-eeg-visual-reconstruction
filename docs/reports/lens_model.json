@@ -1,0 +1,262 @@
+{
+ "S01": {
+  "rho": 0.017552638426423073,
+  "lens_median": 58.70414352416992,
+  "lens_p10": 32.93401336669922,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 0.4900990128517151,
+  "reliability_inferred": 0.6748931407928467,
+  "reliability_fixed20": 0.5468564629554749
+ },
+ "S02": {
+  "rho": 0.002818329958245158,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.4145934581756592,
+  "reliability_fixed20": 0.24562785029411316
+ },
+ "S03": {
+  "rho": -0.0001986986317206174,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.41437461972236633,
+  "reliability_fixed20": 0.26167386770248413
+ },
+ "S04": {
+  "rho": 0.004051193129271269,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.42865830659866333,
+  "reliability_fixed20": 0.31620633602142334
+ },
+ "S06": {
+  "rho": 0.003701345529407263,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.43560898303985596,
+  "reliability_fixed20": 0.26131346821784973
+ },
+ "S07": {
+  "rho": 0.0022182168904691935,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.4904322624206543,
+  "reliability_fixed20": 0.2845761179924011
+ },
+ "S11": {
+  "rho": 0.0037985467351973057,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.4908042550086975,
+  "reliability_fixed20": 0.2752639353275299
+ },
+ "S12": {
+  "rho": -0.04998129978775978,
+  "lens_median": 60.0,
+  "lens_p10": 59.72963333129883,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.3790747821331024,
+  "reliability_fixed20": 0.3153878450393677
+ },
+ "S13": {
+  "rho": -0.0019140716176480055,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.08175667375326157,
+  "reliability_fixed20": 0.06353037804365158
+ },
+ "S15": {
+  "rho": 0.008148380555212498,
+  "lens_median": 60.0,
+  "lens_p10": 42.86058044433594,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 0.713178277015686,
+  "reliability_inferred": 0.5313071012496948,
+  "reliability_fixed20": 0.42663586139678955
+ },
+ "S16": {
+  "rho": 0.001305868267081678,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.4113500416278839,
+  "reliability_fixed20": 0.25496533513069153
+ },
+ "S17": {
+  "rho": -0.000887380272615701,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.3250766694545746,
+  "reliability_fixed20": 0.21813516318798065
+ },
+ "S18": {
+  "rho": 0.0027065088506788015,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.23787452280521393,
+  "reliability_fixed20": 0.20252397656440735
+ },
+ "S19": {
+  "rho": 0.0033439244143664837,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.22729703783988953,
+  "reliability_fixed20": 0.202564537525177
+ },
+ "S21": {
+  "rho": 0.002407369203865528,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.35682418942451477,
+  "reliability_fixed20": 0.23671013116836548
+ },
+ "S22": {
+  "rho": 0.0013283472508192062,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.3333517611026764,
+  "reliability_fixed20": 0.256117045879364
+ },
+ "S23": {
+  "rho": -0.04163577780127525,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.17183779180049896,
+  "reliability_fixed20": 0.1695939600467682
+ },
+ "S25": {
+  "rho": 0.006965348497033119,
+  "lens_median": 60.0,
+  "lens_p10": 57.48067092895508,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 0.8320000171661377,
+  "reliability_inferred": 0.4757050573825836,
+  "reliability_fixed20": 0.29870742559432983
+ },
+ "S26": {
+  "rho": 0.005694452207535505,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.47969797253608704,
+  "reliability_fixed20": 0.4480796158313751
+ },
+ "S28": {
+  "rho": 0.010498102754354477,
+  "lens_median": 60.0,
+  "lens_p10": 58.868202209472656,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 0.8961538672447205,
+  "reliability_inferred": 0.6511312127113342,
+  "reliability_fixed20": 0.4275515079498291
+ },
+ "S29": {
+  "rho": 0.018988916650414467,
+  "lens_median": 59.84928512573242,
+  "lens_p10": 42.818546295166016,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 0.726190447807312,
+  "reliability_inferred": 0.5659090876579285,
+  "reliability_fixed20": 0.5081764459609985
+ },
+ "S31": {
+  "rho": -0.0018682786030694842,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.22798112034797668,
+  "reliability_fixed20": 0.12275302410125732
+ },
+ "S32": {
+  "rho": -0.0023883378598839045,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.1096869632601738,
+  "reliability_fixed20": 0.07058993726968765
+ },
+ "S33": {
+  "rho": 0.003762881038710475,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.4153388440608978,
+  "reliability_fixed20": 0.22644634544849396
+ },
+ "S34": {
+  "rho": 0.0018637619214132428,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.35857221484184265,
+  "reliability_fixed20": 0.21986085176467896
+ },
+ "S35": {
+  "rho": 0.0030664890073239803,
+  "lens_median": 60.0,
+  "lens_p10": 60.0,
+  "lens_p90": 60.0,
+  "share_below_15s": 0.0,
+  "share_at_max": 1.0,
+  "reliability_inferred": 0.3944000005722046,
+  "reliability_fixed20": 0.2441485971212387
+ }
+}

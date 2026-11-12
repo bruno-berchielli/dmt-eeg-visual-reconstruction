@@ -1,0 +1,113 @@
+{
+ "n_subjects": 28,
+ "atm": {
+  "DMT-EC": {
+   "geometry": -0.033030956983566284,
+   "entities": 0.003408789401873946,
+   "people": 0.05606954172253609,
+   "objects": -0.013410700485110283,
+   "nature": -0.021595148369669914
+  },
+  "EO-EC": {
+   "geometry": -0.012350370176136494,
+   "entities": -0.0033512504305690527,
+   "people": 0.02894076518714428,
+   "objects": 0.0018664009403437376,
+   "nature": -0.020028898492455482
+  },
+  "transplant-EC": {
+   "geometry": -0.019883008673787117,
+   "entities": -0.0032908893190324306,
+   "people": 0.07828699797391891,
+   "objects": -0.04411238804459572,
+   "nature": -0.023477578535676003
+  },
+  "geometry_minus_objects": {
+   "DMT-EC_mean": -0.019620254635810852,
+   "p_DMT-EC_vs_0": 0.040213532745838165,
+   "p_DMT-EC_vs_EO-EC": 0.8665077686309814,
+   "EO-EC_mean": -0.014216767624020576,
+   "p_DMT-EC_vs_transplant": 0.0004249662160873413,
+   "transplant_mean": 0.02422938123345375
+  },
+  "entities_minus_objects": {
+   "DMT-EC_mean": 0.016819490119814873,
+   "p_DMT-EC_vs_0": 0.028050199151039124,
+   "p_DMT-EC_vs_EO-EC": 0.016727693378925323,
+   "EO-EC_mean": -0.005217650439590216,
+   "p_DMT-EC_vs_transplant": 0.003160528838634491,
+   "transplant_mean": 0.04082150384783745
+  },
+  "people_minus_objects": {
+   "DMT-EC_mean": 0.06948024034500122,
+   "p_DMT-EC_vs_0": 0.00019368529319763184,
+   "p_DMT-EC_vs_EO-EC": 0.006548762321472168,
+   "EO-EC_mean": 0.027074364945292473,
+   "p_DMT-EC_vs_transplant": 9.319186210632324e-05,
+   "transplant_mean": 0.12239938229322433
+  },
+  "nature_minus_objects": {
+   "DMT-EC_mean": -0.00818444974720478,
+   "p_DMT-EC_vs_0": 0.16379901766777039,
+   "p_DMT-EC_vs_EO-EC": 0.13751810789108276,
+   "EO-EC_mean": -0.02189529873430729,
+   "p_DMT-EC_vs_transplant": 0.0005833879113197327,
+   "transplant_mean": 0.020634813234210014
+  }
+ },
+ "linear": {
+  "DMT-EC": {
+   "geometry": 0.010338601656258106,
+   "entities": -0.0064970045350492,
+   "people": 0.005457361228764057,
+   "objects": -0.00291045056656003,
+   "nature": -0.007617785595357418
+  },
+  "EO-EC": {
+   "geometry": 0.010355093516409397,
+   "entities": -0.007218333426862955,
+   "people": -0.0037761139683425426,
+   "objects": 0.0033396040089428425,
+   "nature": -0.0018879135604947805
+  },
+  "transplant-EC": {
+   "geometry": 0.004298556596040726,
+   "entities": -0.0022030225954949856,
+   "people": -0.005993158556520939,
+   "objects": 0.008159230463206768,
+   "nature": -0.003898830385878682
+  },
+  "geometry_minus_objects": {
+   "DMT-EC_mean": 0.013249053619801998,
+   "p_DMT-EC_vs_0": 0.20980393886566162,
+   "p_DMT-EC_vs_EO-EC": 0.38639476895332336,
+   "EO-EC_mean": 0.007015489973127842,
+   "p_DMT-EC_vs_transplant": 0.1199713721871376,
+   "transplant_mean": -0.0038606745656579733
+  },
+  "entities_minus_objects": {
+   "DMT-EC_mean": -0.0035865542013198137,
+   "p_DMT-EC_vs_0": 0.6781789660453796,
+   "p_DMT-EC_vs_EO-EC": 0.6781789660453796,
+   "EO-EC_mean": -0.010557936504483223,
+   "p_DMT-EC_vs_transplant": 0.6781789660453796,
+   "transplant_mean": -0.010362252593040466
+  },
+  "people_minus_objects": {
+   "DMT-EC_mean": 0.00836780946701765,
+   "p_DMT-EC_vs_0": 0.43800118565559387,
+   "p_DMT-EC_vs_EO-EC": 0.13751810789108276,
+   "EO-EC_mean": -0.0071157184429466724,
+   "p_DMT-EC_vs_transplant": 0.14377251267433167,
+   "transplant_mean": -0.014152388088405132
+  },
+  "nature_minus_objects": {
+   "DMT-EC_mean": -0.004707335028797388,
+   "p_DMT-EC_vs_0": 0.7113664150238037,
+   "p_DMT-EC_vs_EO-EC": 0.7281656265258789,
+   "EO-EC_mean": -0.005227517336606979,
+   "p_DMT-EC_vs_transplant": 0.5979220867156982,
+   "transplant_mean": -0.012058059684932232
+  }
+ }
+}
