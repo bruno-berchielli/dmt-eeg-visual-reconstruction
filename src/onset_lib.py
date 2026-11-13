@@ -33,6 +33,7 @@ warnings.filterwarnings("ignore")
 mne.set_log_level("ERROR")
 
 CONT = DATA / "processed/onset_cont"
+CONT.mkdir(parents=True, exist_ok=True)
 VI_CHANNELS = [c for c in THINGS_CHANNELS if c in (
     "Fpz Fp1 Fp2 Fz F3 F4 F7 F8 FCz FC3 FC4 FT7 FT8 Cz C3 C4 T7 T8 CP3 CP4 "
     "TP7 TP8 Pz P3 P4 P7 P8 PO3 PO4 Oz O1 O2").split()]

@@ -77,7 +77,34 @@ The next step is calibration on the same equipment: record sober volunteers view
 - [References](docs/references.md): papers, datasets and model repositories
 - [Original brief](docs/brief.md)
 
-The sections below are for reproducing the work.
+The sections below are for running the code.
+
+## Quick start: make a video
+
+Needs Python 3.11, about 20 GB of disk and either an Apple-silicon Mac or an NVIDIA GPU. Nothing has to be trained: the decoder used for the published videos is downloaded ready to use.
+
+```
+git clone https://github.com/bruno-berchielli/dmt-eeg-visual-reconstruction.git
+cd dmt-eeg-visual-reconstruction
+python3.11 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+cd src
+python download_data.py videos                 # decoder (2 MB) + DMT recordings (1.5 GB, about 10 min)
+python onset_cache.py dmt                      # filter and resample the recordings
+python drug_curve.py                           # strength of the drug effect over time
+python dmt_dense.py                            # decode every recording (about 2 min)
+python dmt_events_video.py S07 T500multi DMT inferred contrast step=1 target=0.65 max=30
+```
+
+The video is written to `outputs/videos/`. The first run of the last command also downloads the image generator (10 to 17 GB). Replace `S07` with any participant from `S01` to `S35`; add `tmax=60` to render only the first minute, or `name=myvideo` to choose the file name. On an Apple M4 Pro each frame takes about 2 s, so a full session takes 10 to 20 minutes.
+
+To retrain the decoder instead of downloading it (52 GB of THINGS-EEG2, about 12 GB more for caches):
+
+```
+python download_data.py training
+python things_multi.py 08 01 02 03 05
+```
 
 ## Models and generator
 
@@ -98,17 +125,18 @@ The sections below are for reproducing the work.
 | [Figshare 30227503](https://doi.org/10.6084/m9.figshare.30227503) | perception and imagery of 10 images, 22 participants, 32 channels | `data/raw/imagery/` |
 | [HF LidongYang/EEG_Image_decode](https://huggingface.co/datasets/LidongYang/EEG_Image_decode) | THINGS-EEG2 preprocessed at 250 Hz (sub-01, 02, 03, 05, 08), CLIP features, images | `data/raw/things/` |
 
-Data, trained models and outputs are not versioned (about 80 GB). Reports are copied to `docs/reports/`.
+Only the first and the last are needed for the videos, and `download_data.py` fetches both (see Quick start). The other three were used in the control experiments and have to be downloaded by hand into the paths above.
+
+Data, trained models and outputs are not versioned. The trained decoder is attached to the [`decoder-v1` release](https://github.com/bruno-berchielli/dmt-eeg-visual-reconstruction/releases/tag/decoder-v1). Reports are copied to `docs/reports/`.
 
 ## Setup
 
 ```
-uv venv --python 3.11 .venv && source .venv/bin/activate
-uv pip install torch torchvision mne pyxdf numpy scipy pandas scikit-learn matplotlib diffusers transformers \
-  accelerate safetensors open_clip_torch einops pillow imageio imageio-ffmpeg huggingface_hub h5py
+python3.11 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Tested on an Apple M4 Pro (48 GB) with MPS: about 2 s per generated frame.
+`requirements.lock.txt` lists the exact versions the published videos were generated with. Tested on an Apple M4 Pro (48 GB) with MPS: about 2 s per generated frame. A CUDA GPU is selected automatically when present but has not been tested.
 
 ## Training
 
@@ -119,7 +147,7 @@ Run from `src/`. All decoders map EEG windows (250 Hz, 1 s, average reference, p
 | ATM-S encoder, one subject, any channel subset | `train_encoder.py --channels … --tag …` | contrastive + MSE, as in the ATM repo; retrained because published weights need 63 channels |
 | Linear baseline | `train_linear.py` | ridge on the waveform |
 | Jitter-tolerant event decoder | `event_decoders.py` | centered ridge, 20 ms bins from 100 to 540 ms, copies shifted ±40 ms |
-| Five-subject decoder and onset template (used by the videos) | `things_multi.py 08 01 02 03 05` | ridge from per-subject sufficient statistics; matched-filter template on 14 channels |
+| Five-subject decoder and onset template (used by the videos) | `things_multi.py 08 01 02 03 05` | ridge from per-subject sufficient statistics; matched-filter template on 14 channels; add `gate` to also run the cross-lab check on the imagery dataset |
 | Single-image lab model | `vi_model.py` | detector and decoder trained on the 10-image dataset |
 
 ## Pipeline
@@ -141,19 +169,12 @@ Run from `src/`. All decoders map EEG windows (250 Hz, 1 s, average reference, p
 
 Shared modules: `common.py` (channels, normalization, architecture), `decode.py` (embedding, concept space, consistency tests), `sdxl.py` (generator).
 
-Final videos:
-
-```
-cd src
-python onset_cache.py dmt && python things_multi.py 08 01 02 03 05
-python drug_curve.py && python dmt_dense.py
-python dmt_events_video.py S07 T500multi DMT inferred contrast step=1 target=0.65 max=30
-```
+The commands for the final videos are in [Quick start](#quick-start-make-a-video).
 
 ## Layout
 
 ```
-src/            scripts
+src/            scripts (download_data.py fetches data and the decoder)
 docs/           brief, experiment log, results, references, reports, figures, cases
 data/ models/ outputs/ external/    not versioned
 ```
