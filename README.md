@@ -4,6 +4,8 @@ N,N-DMT is widely regarded as the psychedelic with the most vivid and characteri
 
 This project asks whether scalp EEG can translate part of that subjective visual experience into images, even partially. It takes EEG recorded while participants were under DMT, decodes it with models trained on sober people viewing images (THINGS-EEG2), and renders the result over time with a diffusion generator. Each video below is one participant's DMT session minus their own eyes-closed rest.
 
+> **This is an exploratory project, not academic research.** It was built out of curiosity, without the rigor of a scientific study: no pre-registered hypotheses, no peer review, and no claim of statistical validity. The results are a first look at what is possible, meant to be explored, questioned and improved.
+
 <table>
   <tr>
     <td align="center" width="33%"><img src="docs/cases/S12.gif" width="270" alt="S12"><br><b>S12</b><br>reported patterns 90 · scenes 73<br><a href="docs/cases/S12_dmt_minus_rest.mp4?raw=true">download video (mp4)</a></td>
