@@ -1,0 +1,21 @@
+# Versions the published videos were generated with (Python 3.11, macOS, Apple silicon).
+torch==2.15.0
+torchvision==0.29.2
+mne==1.13.2
+pyxdf==1.18.0
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.1.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+diffusers==0.42.1
+transformers==5.22.2
+accelerate==1.15.0
+safetensors==0.8.0
+open_clip_torch==4.2.2
+einops==0.8.2
+pillow==13.0.0
+imageio==2.38.1
+imageio-ffmpeg==0.8.1
+huggingface_hub==2.4.0
+h5py==3.16.0

@@ -7,11 +7,14 @@ statistics so any subset of subjects can be combined without reloading.
 Measures, for the single-subject model (sub-08) and the multi-subject ones:
   1. THINGS, held-out person: train on the others, test on sub-08's test
      set (200-way, 80 repetitions averaged), aligned and jittered;
-  2. other lab: zero-shot identification of the 10 imagery-dataset pictures
-     during perception, at assumed onsets around the measured one
-     (-5.814 s from the marker), 30 shared channels;
-  3. saves the 21-channel multi-subject decoder for DMT and multi-subject
-     matched-filter templates (14 channels).
+  2. saves the 21-channel multi-subject decoder for DMT and multi-subject
+     matched-filter templates (14 channels);
+  3. only with "gate" (needs the imagery dataset, Figshare 30227503):
+     zero-shot identification of the 10 imagery-dataset pictures during
+     perception, at assumed onsets around the measured one (-5.814 s from
+     the marker), 30 shared channels.
+
+Usage: python things_multi.py [subjects ...] [gate]
 """
 import json
 import sys
@@ -22,9 +25,7 @@ import torch
 from scipy.stats import wilcoxon
 
 import cache_things
-from analyze_imagery import IMAGES, identification, stimulus_embeddings
 from common import DATA, MODELS, OUTPUTS, SFREQ, SHARED_CHANNELS, THINGS_CHANNELS, WINDOW, normalize_windows
-from loso_imagery import epochs_at
 from onset_lib import CHANNEL_SETS, CONT, VI_CHANNELS, clean_mask, load_cont
 from tolerance_test import A, B, bins, retrieval
 from train_encoder import load_features
@@ -87,7 +88,10 @@ def things_test(ck, sub, chans, f_test, rng):
     return {"aligned": retrieval(aligned, f_test), "jitter_pm40ms": retrieval(pj.reshape(200, 80, -1).mean(1), f_test)}
 
 
-def imagery_gate(models, stim):
+def imagery_gate(models):
+    from analyze_imagery import IMAGES, identification, stimulus_embeddings
+    from loso_imagery import epochs_at
+    stim = stimulus_embeddings()
     lags = np.round(ONSET + np.arange(-0.2, 0.2001, 0.02), 3)
     sums = {name: {} for name in models}
     for path in sorted(CONT.glob("imagery_*.npz")):
@@ -141,7 +145,8 @@ def templates(subs):
 
 
 def main():
-    subs = sys.argv[1:] or ["08", "01", "02", "03", "05"]
+    gate = "gate" in sys.argv
+    subs = [a for a in sys.argv[1:] if a != "gate"] or ["08", "01", "02", "03", "05"]
     for sub in subs:
         cache_things.main(sub)
     y = load_features("train").numpy().astype(np.float64)
@@ -149,7 +154,8 @@ def main():
     f_test = load_features("test")
     rng = np.random.default_rng(0)
     report = {"subjects": subs}
-    mom = {name: {sub: moments(sub, chans, y) for sub in subs} for name, chans in SETS.items()}
+    mom = {name: {sub: moments(sub, chans, y) for sub in subs} for name, chans in SETS.items()
+           if gate or name == "dmt21"}
     others = [s for s in subs if s != "08"]
 
     cks = {"single_08": solve([mom["dmt21"]["08"]], y_mean), "all": solve([mom["dmt21"][s] for s in subs], y_mean)}
@@ -160,13 +166,16 @@ def main():
     torch.save({"w": torch.from_numpy(cks["all"]["w"]).float(), "mu": torch.from_numpy(cks["all"]["mu"]).float(),
                 "sd": torch.from_numpy(cks["all"]["sd"]).float(), "y_mean": torch.from_numpy(y_mean).float()},
                MODELS / "event_ridge_clip_multi.pt")
-
-    gate_models = {"single_08": solve([mom["vi30"]["08"]], y_mean), "all": solve([mom["vi30"][s] for s in subs], y_mean)}
-    gate = imagery_gate(gate_models, stimulus_embeddings())
-    report["imagery_gate_30ch"] = {k: {a: v[a] for a in ("at_measured_onset", "best", "worst")} for k, v in gate.items()}
-    print(json.dumps(report["imagery_gate_30ch"], indent=1), flush=True)
-    (OUTPUTS / "things_multi_gate_curves.json").write_text(json.dumps({k: v["curve"] for k, v in gate.items()}))
     templates(subs)
+
+    if gate:
+        gate_models = {"single_08": solve([mom["vi30"]["08"]], y_mean),
+                       "all": solve([mom["vi30"][s] for s in subs], y_mean)}
+        curves = imagery_gate(gate_models)
+        report["imagery_gate_30ch"] = {k: {a: v[a] for a in ("at_measured_onset", "best", "worst")}
+                                       for k, v in curves.items()}
+        print(json.dumps(report["imagery_gate_30ch"], indent=1), flush=True)
+        (OUTPUTS / "things_multi_gate_curves.json").write_text(json.dumps({k: v["curve"] for k, v in curves.items()}))
     (OUTPUTS / "things_multi_report.json").write_text(json.dumps(report, indent=1))
 
 

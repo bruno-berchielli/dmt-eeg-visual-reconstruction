@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 MODELS = ROOT / "models"
 OUTPUTS = ROOT / "outputs"
+for _d in (DATA / "raw", DATA / "processed", MODELS, OUTPUTS):
+    _d.mkdir(parents=True, exist_ok=True)
 
 THINGS_CHANNELS = [
     'Fp1', 'Fp2', 'AF7', 'AF3', 'AFz', 'AF4', 'AF8', 'F7', 'F5', 'F3',
@@ -30,6 +32,8 @@ WINDOW = 250
 
 
 def device():
+    if torch.cuda.is_available():
+        return torch.device("cuda")
     return torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 

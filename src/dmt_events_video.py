@@ -320,7 +320,7 @@ def main():
     gen = EmbeddingToImage()
     noise_rng = np.random.default_rng(0)
     out = OUTPUTS / "videos"
-    out.mkdir(exist_ok=True)
+    out.mkdir(parents=True, exist_ok=True)
     path = out / f"{opts['name']}.mp4" if "name" in opts else out / f"{subj}_{cond}_events_{kind}{''.join('_' + a.replace('=', '') for a in sys.argv if '=' in a)}{'_contrast' if CONTRAST else ''}{'_halves' if halves else '_inferred_lens' if inferred else '_lens' if lens else '_calibrated' if calib else '_agreement' if fade else '_prior' if prior else '_dense' if dense else '_content'}.mp4"
     # frames are streamed to the file, so an interrupted run leaves a playable partial video
     writer = imageio.get_writer(path, fps=fps, macro_block_size=1)
