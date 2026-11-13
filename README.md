@@ -153,3 +153,11 @@ src/            scripts
 docs/           brief, experiment log, results, references, reports, figures, cases
 data/ models/ outputs/ external/    not versioned
 ```
+
+## License and attribution
+
+- Code: [MIT](LICENSE).
+- Documentation, figures, videos and GIFs: [CC BY 4.0](LICENSE-docs).
+- The EEG behind the videos comes from Pallavicini et al. (2021), [Zenodo 3992359](https://doi.org/10.5281/zenodo.3992359), CC BY 4.0. The pictures were generated with SDXL-Turbo (Powered by Stability AI).
+
+Datasets and model weights are not redistributed and keep their own licenses. Full credits and terms: [NOTICE.md](NOTICE.md).
